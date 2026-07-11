@@ -2,19 +2,27 @@ import type { Term } from '../types'
 
 interface LearnListProps {
   terms: Term[]
+  title?: string
+  intro?: string
+  reviewLabel?: string
   onStartReview: () => void
   onBack: () => void
 }
 
-export function LearnList({ terms, onStartReview, onBack }: LearnListProps) {
+export function LearnList({
+  terms,
+  title = '今日新词',
+  intro = '浏览中英对照，熟悉后再进入复习自评。',
+  reviewLabel = '开始复习自评',
+  onStartReview,
+  onBack,
+}: LearnListProps) {
   return (
     <div className="learn-list">
-      <p className="learn-list__intro">
-        浏览今日新词的中英对照，熟悉后再进入复习自评。
-      </p>
+      <p className="learn-list__intro">{intro}</p>
 
       <section className="grouped-section">
-        <h3 className="section-header">今日新词 · {terms.length} 个</h3>
+        <h3 className="section-header">{title} · {terms.length} 个</h3>
         <div className="inset-group learn-list__group">
           {terms.map((term, i) => (
             <article
@@ -40,7 +48,7 @@ export function LearnList({ terms, onStartReview, onBack }: LearnListProps) {
 
       <div className="learn-list__actions">
         <button type="button" className="btn btn--filled btn--block" onClick={onStartReview}>
-          开始复习自评
+          {reviewLabel}
         </button>
         <button type="button" className="btn btn--plain btn--block" onClick={onBack}>
           返回

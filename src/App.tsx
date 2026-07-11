@@ -24,6 +24,8 @@ export default function App() {
     currentWeekLabel,
     todayNewTerms,
     todayReviewTerms,
+    advanceSegments,
+    sampleSegmentReview,
     stats,
     weekStats,
     recordReview,
@@ -61,6 +63,8 @@ export default function App() {
           <ReviewSession
             newTerms={todayNewTerms}
             reviewTerms={todayReviewTerms}
+            advanceSegments={advanceSegments}
+            sampleSegmentReview={sampleSegmentReview}
             onRate={recordReview}
           />
         )}

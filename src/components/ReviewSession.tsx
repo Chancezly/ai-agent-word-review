@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import type { Term } from '../types'
+import type { Term, WeekSegment } from '../types'
+import { SEGMENT_SAMPLE_SIZE } from '../utils'
 import { IconChevron } from './Icons'
 import { Flashcard } from './Flashcard'
 import { LearnList } from './LearnList'
@@ -7,21 +8,40 @@ import { LearnList } from './LearnList'
 interface ReviewSessionProps {
   newTerms: Term[]
   reviewTerms: Term[]
+  advanceSegments: WeekSegment[]
+  sampleSegmentReview: (weekLabel: string, size?: number) => Term[]
   onRate: (termId: number, rating: 'unknown' | 'known' | 'mastered') => void
 }
 
 type Phase = 'menu' | 'learn' | 'quiz'
 
-export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionProps) {
+interface LearnContext {
+  terms: Term[]
+  title: string
+  intro: string
+  reviewLabel: string
+  onReview: () => void
+}
+
+export function ReviewSession({
+  newTerms,
+  reviewTerms,
+  advanceSegments,
+  sampleSegmentReview,
+  onRate,
+}: ReviewSessionProps) {
   const [phase, setPhase] = useState<Phase>('menu')
   const [queue, setQueue] = useState<Term[]>([])
   const [index, setIndex] = useState(0)
+  const [learnContext, setLearnContext] = useState<LearnContext | null>(null)
+  const [quizTitle, setQuizTitle] = useState('')
 
   const quizQueue = [...newTerms, ...reviewTerms]
 
-  const startQuiz = (terms: Term[]) => {
+  const startQuiz = (terms: Term[], title = '') => {
     setQueue(terms)
     setIndex(0)
+    setQuizTitle(title)
     setPhase('quiz')
   }
 
@@ -35,15 +55,40 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
       setPhase('menu')
       setQueue([])
       setIndex(0)
+      setQuizTitle('')
+      setLearnContext(null)
     }
   }
 
-  if (phase === 'learn') {
+  const startAdvanceLearn = (segment: WeekSegment) => {
+    setLearnContext({
+      terms: segment.unstarted,
+      title: `${segment.week} · ${segment.theme}`,
+      intro: `提前学习 ${segment.week} 的内容。浏览中英对照后，可自评或随机抽测已学段落。`,
+      reviewLabel: '自评本段新词',
+      onReview: () => startQuiz(segment.unstarted, `${segment.week} 新词自评`),
+    })
+    setPhase('learn')
+  }
+
+  const startSegmentSample = (segment: WeekSegment) => {
+    const sampleCount = Math.min(SEGMENT_SAMPLE_SIZE, segment.reviewPool.length)
+    const sampled = sampleSegmentReview(segment.week, sampleCount)
+    startQuiz(sampled, `${segment.week} 随机抽测`)
+  }
+
+  if (phase === 'learn' && learnContext) {
     return (
       <LearnList
-        terms={newTerms}
-        onStartReview={() => startQuiz(quizQueue)}
-        onBack={() => setPhase('menu')}
+        terms={learnContext.terms}
+        title={learnContext.title}
+        intro={learnContext.intro}
+        reviewLabel={learnContext.reviewLabel}
+        onStartReview={learnContext.onReview}
+        onBack={() => {
+          setLearnContext(null)
+          setPhase('menu')
+        }}
       />
     )
   }
@@ -54,7 +99,7 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
       return (
         <div className="review-done">
           <div className="review-done__icon">✓</div>
-          <h2>本次复习完成</h2>
+          <h2>{quizTitle ? `${quizTitle}完成` : '本次复习完成'}</h2>
           <p>进度已保存，系统会根据你的评分安排下次复习。</p>
           <button type="button" className="btn btn--filled" onClick={() => setPhase('menu')}>
             完成
@@ -64,12 +109,15 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
     }
 
     return (
-      <Flashcard
-        term={current}
-        index={index}
-        total={queue.length}
-        onRate={handleRate}
-      />
+      <>
+        {quizTitle && <p className="quiz-banner">{quizTitle}</p>}
+        <Flashcard
+          term={current}
+          index={index}
+          total={queue.length}
+          onRate={handleRate}
+        />
+      </>
     )
   }
 
@@ -80,7 +128,16 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
       count: newTerms.length,
       desc: '中英对照浏览本周新词',
       disabled: newTerms.length === 0,
-      action: () => setPhase('learn'),
+      action: () => {
+        setLearnContext({
+          terms: newTerms,
+          title: '今日新词',
+          intro: '浏览本周新词的中英对照，熟悉后再进入复习自评。',
+          reviewLabel: '开始复习自评',
+          onReview: () => startQuiz(quizQueue),
+        })
+        setPhase('learn')
+      },
     },
     {
       key: 'quiz-all',
@@ -103,11 +160,11 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
   return (
     <div className="review-start">
       <p className="review-start__desc">
-        建议先浏览「今日学习」熟悉新词，再进入复习自评。翻转卡片后可对照中英双语。
+        建议先浏览「今日学习」熟悉新词，再进入复习自评。学得快可提前学习后续周次，并用随机抽测巩固。
       </p>
 
       <section className="grouped-section">
-        <h3 className="section-header">学习流程</h3>
+        <h3 className="section-header">本周流程</h3>
         <div className="inset-group">
           {menuOptions.map((opt, i) => (
             <button
@@ -128,7 +185,54 @@ export function ReviewSession({ newTerms, reviewTerms, onRate }: ReviewSessionPr
         </div>
       </section>
 
-      {quizQueue.length === 0 && (
+      {advanceSegments.length > 0 && (
+        <section className="grouped-section">
+          <h3 className="section-header">提前学习</h3>
+          <div className="inset-group">
+            {advanceSegments.map((segment, i) => {
+              const sampleCount = Math.min(SEGMENT_SAMPLE_SIZE, segment.reviewPool.length)
+              return (
+                <div
+                  key={segment.week}
+                  className={`advance-segment ${i < advanceSegments.length - 1 ? 'advance-segment--border' : ''}`}
+                >
+                  <div className="advance-segment__info">
+                    <span className="advance-segment__week">{segment.week}</span>
+                    <span className="advance-segment__theme">{segment.theme}</span>
+                    <span className="advance-segment__meta">
+                      {segment.unstarted.length > 0 && `未学 ${segment.unstarted.length}`}
+                      {segment.unstarted.length > 0 && segment.reviewPool.length > 0 && ' · '}
+                      {segment.reviewPool.length > 0 && `已学 ${segment.reviewPool.length}`}
+                    </span>
+                  </div>
+                  <div className="advance-segment__actions">
+                    {segment.unstarted.length > 0 && (
+                      <button
+                        type="button"
+                        className="btn btn--tinted btn--compact"
+                        onClick={() => startAdvanceLearn(segment)}
+                      >
+                        学习
+                      </button>
+                    )}
+                    {segment.reviewPool.length > 0 && (
+                      <button
+                        type="button"
+                        className="btn btn--filled btn--compact btn--green"
+                        onClick={() => startSegmentSample(segment)}
+                      >
+                        随机抽测 {sampleCount} 个
+                      </button>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+      )}
+
+      {quizQueue.length === 0 && advanceSegments.length === 0 && (
         <p className="empty-state">今日任务已完成，明天再来。</p>
       )}
     </div>

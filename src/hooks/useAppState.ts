@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import content from '../data/content.json'
-import type { AppState, MasteryStatus, Term, TermProgress, WeekPlan } from '../types'
+import type { AppState, MasteryStatus, Term, TermProgress, WeekPlan, WeekSegment } from '../types'
 import {
   addDays,
   createDefaultProgress,
@@ -9,7 +9,10 @@ import {
   getWeekLabel,
   getWeekNumber,
   loadState,
+  parseWeekLabel,
   saveState,
+  SEGMENT_SAMPLE_SIZE,
+  shuffleSample,
   statusFromRating,
   todayISO,
 } from '../utils'
@@ -83,6 +86,34 @@ export function useAppState() {
     })
   }, [getProgress])
 
+  const advanceSegments = useMemo((): WeekSegment[] => {
+    return WEEK_PLAN.map((plan) => {
+      const weekNum = parseWeekLabel(plan.week)
+      const weekTerms = ALL_TERMS.filter((t) => t.week === plan.week)
+      const unstarted = weekTerms.filter((t) => getProgress(t.id).status === 'not_started')
+      const reviewPool = weekTerms.filter((t) => getProgress(t.id).status !== 'not_started')
+      return {
+        week: plan.week,
+        weekNum,
+        theme: plan.theme,
+        unstarted,
+        reviewPool,
+      }
+    }).filter(
+      (s) => s.weekNum > currentWeekNum && (s.unstarted.length > 0 || s.reviewPool.length > 0),
+    )
+  }, [currentWeekNum, getProgress])
+
+  const sampleSegmentReview = useCallback(
+    (weekLabel: string, size = SEGMENT_SAMPLE_SIZE) => {
+      const pool = ALL_TERMS.filter(
+        (t) => t.week === weekLabel && getProgress(t.id).status !== 'not_started',
+      )
+      return shuffleSample(pool, size)
+    },
+    [getProgress],
+  )
+
   const recordReview = useCallback(
     (termId: number, rating: 'unknown' | 'known' | 'mastered') => {
       setState((prev: AppState) => {
@@ -140,6 +171,8 @@ export function useAppState() {
     currentWeekLabel,
     todayNewTerms,
     todayReviewTerms,
+    advanceSegments,
+    sampleSegmentReview,
     stats,
     weekStats,
     getProgress,

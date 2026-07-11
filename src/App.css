@@ -751,6 +751,59 @@ button {
   min-height: 44px;
 }
 
+.btn--compact {
+  min-height: 36px;
+  padding: 8px 14px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.quiz-banner {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tint);
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.advance-segment {
+  padding: 14px 16px;
+}
+
+.advance-segment--border {
+  border-bottom: 0.5px solid var(--separator);
+}
+
+.advance-segment__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.advance-segment__week {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--tint);
+}
+
+.advance-segment__theme {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.41px;
+}
+
+.advance-segment__meta {
+  font-size: 13px;
+  color: var(--label-secondary);
+}
+
+.advance-segment__actions {
+  display: flex;
+  gap: 10px;
+}
+
 .empty-state {
   text-align: center;
   color: var(--label-secondary);

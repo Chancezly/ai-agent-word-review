@@ -1,5 +1,13 @@
 export type MasteryStatus = 'not_started' | 'learning' | 'familiar' | 'mastered'
 
+export interface WeekSegment {
+  week: string
+  weekNum: number
+  theme: string
+  unstarted: Term[]
+  reviewPool: Term[]
+}
+
 export interface Term {
   id: number
   category: string
