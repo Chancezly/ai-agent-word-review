@@ -1,0 +1,2061 @@
+{
+  "terms": [
+    {
+      "id": 1,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Variable",
+      "chinese": "变量",
+      "explanation": "保存数据的名字，例如 user_name。",
+      "masteryStandard": "能读写并解释作用"
+    },
+    {
+      "id": 2,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "String",
+      "chinese": "字符串",
+      "explanation": "由文本字符组成的数据类型，Python 中常写成 str。",
+      "masteryStandard": "能做拼接、切片和格式化"
+    },
+    {
+      "id": 3,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Integer",
+      "chinese": "整数",
+      "explanation": "不带小数的数字，Python 中为 int。",
+      "masteryStandard": "能用于计数和索引"
+    },
+    {
+      "id": 4,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Float",
+      "chinese": "浮点数",
+      "explanation": "带小数的数字类型。",
+      "masteryStandard": "理解精度与类型转换"
+    },
+    {
+      "id": 5,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Boolean",
+      "chinese": "布尔值",
+      "explanation": "只有 True 和 False，用于条件判断。",
+      "masteryStandard": "能写条件表达式"
+    },
+    {
+      "id": 6,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "List",
+      "chinese": "列表",
+      "explanation": "有顺序、可修改的数据集合。",
+      "masteryStandard": "会增删改查和遍历"
+    },
+    {
+      "id": 7,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Tuple",
+      "chinese": "元组",
+      "explanation": "有顺序但通常不可修改的数据集合。",
+      "masteryStandard": "知道与 List 的区别"
+    },
+    {
+      "id": 8,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Set",
+      "chinese": "集合",
+      "explanation": "元素不重复、无固定顺序的集合。",
+      "masteryStandard": "会去重和集合运算"
+    },
+    {
+      "id": 9,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Dictionary",
+      "chinese": "字典",
+      "explanation": "用键值对保存数据，Python 中为 dict。",
+      "masteryStandard": "会按 key 读写数据"
+    },
+    {
+      "id": 10,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Condition",
+      "chinese": "条件判断",
+      "explanation": "根据条件执行不同代码，常用 if/elif/else。",
+      "masteryStandard": "能拆业务分支"
+    },
+    {
+      "id": 11,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Loop",
+      "chinese": "循环",
+      "explanation": "重复执行代码，常用 for 和 while。",
+      "masteryStandard": "能控制终止条件"
+    },
+    {
+      "id": 12,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Function",
+      "chinese": "函数",
+      "explanation": "封装可重复调用的逻辑，可接收参数并返回结果。",
+      "masteryStandard": "会定义、传参和 return"
+    },
+    {
+      "id": 13,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Parameter",
+      "chinese": "形参",
+      "explanation": "定义函数时声明的输入名称。",
+      "masteryStandard": "分清 parameter 与 argument"
+    },
+    {
+      "id": 14,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Argument",
+      "chinese": "实参",
+      "explanation": "调用函数时真正传入的值。",
+      "masteryStandard": "分清位置与关键字参数"
+    },
+    {
+      "id": 15,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Return Value",
+      "chinese": "返回值",
+      "explanation": "函数执行后交回给调用者的数据。",
+      "masteryStandard": "能接收并继续处理"
+    },
+    {
+      "id": 16,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Class",
+      "chinese": "类",
+      "explanation": "描述一类对象共有属性和行为的模板。",
+      "masteryStandard": "会写简单业务类"
+    },
+    {
+      "id": 17,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Object",
+      "chinese": "对象",
+      "explanation": "根据类创建出的具体实例。",
+      "masteryStandard": "能创建并调用方法"
+    },
+    {
+      "id": 18,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Instance",
+      "chinese": "实例",
+      "explanation": "Object 的同义常用表达，强调由某个类生成。",
+      "masteryStandard": "能解释实例化"
+    },
+    {
+      "id": 19,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Attribute",
+      "chinese": "属性",
+      "explanation": "对象保存的数据，例如 user.name。",
+      "masteryStandard": "会读取和修改"
+    },
+    {
+      "id": 20,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Method",
+      "chinese": "方法",
+      "explanation": "定义在类中的函数，通常操作对象自身。",
+      "masteryStandard": "理解 self"
+    },
+    {
+      "id": 21,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Constructor",
+      "chinese": "构造方法",
+      "explanation": "对象创建时执行的初始化逻辑，Python 常用 __init__。",
+      "masteryStandard": "会初始化属性"
+    },
+    {
+      "id": 22,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Module",
+      "chinese": "模块",
+      "explanation": "一个可被导入的 Python 文件。",
+      "masteryStandard": "会 import/from/as"
+    },
+    {
+      "id": 23,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Package",
+      "chinese": "包",
+      "explanation": "组织多个 Python 模块的目录。",
+      "masteryStandard": "理解项目模块化"
+    },
+    {
+      "id": 24,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Exception",
+      "chinese": "异常",
+      "explanation": "程序运行中出现的可捕获错误。",
+      "masteryStandard": "会 try/except"
+    },
+    {
+      "id": 25,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Traceback",
+      "chinese": "错误回溯",
+      "explanation": "显示异常发生位置和调用路径的信息。",
+      "masteryStandard": "能从最后一行定位问题"
+    },
+    {
+      "id": 26,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "File I/O",
+      "chinese": "文件读写",
+      "explanation": "从文件读取或向文件写入数据。",
+      "masteryStandard": "会 with open"
+    },
+    {
+      "id": 27,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "JSON",
+      "chinese": "JSON 数据格式",
+      "explanation": "前后端和 API 常用的键值结构文本格式。",
+      "masteryStandard": "会 loads/dumps"
+    },
+    {
+      "id": 28,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Environment Variable",
+      "chinese": "环境变量",
+      "explanation": "存放 API Key、配置等不应写死在代码里的值。",
+      "masteryStandard": "会使用 .env"
+    },
+    {
+      "id": 29,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Virtual Environment",
+      "chinese": "虚拟环境",
+      "explanation": "隔离不同 Python 项目依赖的环境。",
+      "masteryStandard": "会创建和激活 venv"
+    },
+    {
+      "id": 30,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Dependency",
+      "chinese": "依赖",
+      "explanation": "项目需要安装的第三方库。",
+      "masteryStandard": "会 pip 和 requirements.txt"
+    },
+    {
+      "id": 31,
+      "category": "Python 基础",
+      "week": "第1周",
+      "english": "Async",
+      "chinese": "异步",
+      "explanation": "等待网络或文件操作时让程序继续处理其他任务。",
+      "masteryStandard": "理解 async/await"
+    },
+    {
+      "id": 32,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "API",
+      "chinese": "应用程序接口",
+      "explanation": "不同程序交换数据或调用能力的约定。",
+      "masteryStandard": "能描述请求到响应"
+    },
+    {
+      "id": 33,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Endpoint",
+      "chinese": "接口端点",
+      "explanation": "API 中可访问的具体 URL 和功能。",
+      "masteryStandard": "能设计简单路由"
+    },
+    {
+      "id": 34,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "HTTP",
+      "chinese": "超文本传输协议",
+      "explanation": "浏览器、前后端和 API 通信的基础协议。",
+      "masteryStandard": "理解常用方法与状态码"
+    },
+    {
+      "id": 35,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Request",
+      "chinese": "请求",
+      "explanation": "客户端发送给服务器的数据与操作要求。",
+      "masteryStandard": "能看 headers/body"
+    },
+    {
+      "id": 36,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Response",
+      "chinese": "响应",
+      "explanation": "服务器处理请求后返回的状态和数据。",
+      "masteryStandard": "能解析 JSON"
+    },
+    {
+      "id": 37,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "GET",
+      "chinese": "获取请求",
+      "explanation": "通常用于读取资源，不应产生主要数据修改。",
+      "masteryStandard": "会调用查询接口"
+    },
+    {
+      "id": 38,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "POST",
+      "chinese": "提交请求",
+      "explanation": "通常用于创建资源或提交数据。",
+      "masteryStandard": "会发送 JSON body"
+    },
+    {
+      "id": 39,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "PUT",
+      "chinese": "整体更新请求",
+      "explanation": "通常用于替换某个资源的完整内容。",
+      "masteryStandard": "知道与 PATCH 区别"
+    },
+    {
+      "id": 40,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "PATCH",
+      "chinese": "局部更新请求",
+      "explanation": "只修改资源中的部分字段。",
+      "masteryStandard": "能设计更新接口"
+    },
+    {
+      "id": 41,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "DELETE",
+      "chinese": "删除请求",
+      "explanation": "用于删除指定资源。",
+      "masteryStandard": "理解幂等性"
+    },
+    {
+      "id": 42,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Header",
+      "chinese": "请求头",
+      "explanation": "携带认证、内容类型等元数据。",
+      "masteryStandard": "会设置 Authorization"
+    },
+    {
+      "id": 43,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Request Body",
+      "chinese": "请求体",
+      "explanation": "POST 等请求中携带的主要数据。",
+      "masteryStandard": "能发送结构化 JSON"
+    },
+    {
+      "id": 44,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Status Code",
+      "chinese": "状态码",
+      "explanation": "表示 HTTP 请求处理结果的数字，如 200、404、500。",
+      "masteryStandard": "认识常见状态码"
+    },
+    {
+      "id": 45,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "API Key",
+      "chinese": "接口密钥",
+      "explanation": "识别和授权 API 调用者的秘密凭证。",
+      "masteryStandard": "不提交到 GitHub"
+    },
+    {
+      "id": 46,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Authentication",
+      "chinese": "身份认证",
+      "explanation": "确认用户是谁的过程。",
+      "masteryStandard": "理解登录与 Token"
+    },
+    {
+      "id": 47,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Authorization",
+      "chinese": "权限授权",
+      "explanation": "确定已认证用户可以做什么。",
+      "masteryStandard": "分清认证和授权"
+    },
+    {
+      "id": 48,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Token",
+      "chinese": "令牌",
+      "explanation": "代表登录状态或访问权限的一段凭证。",
+      "masteryStandard": "理解 Bearer Token"
+    },
+    {
+      "id": 49,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "SDK",
+      "chinese": "软件开发工具包",
+      "explanation": "封装 API 调用的官方或第三方代码库。",
+      "masteryStandard": "能用 SDK 调模型"
+    },
+    {
+      "id": 50,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Serialization",
+      "chinese": "序列化",
+      "explanation": "把对象转换成可传输或保存的格式。",
+      "masteryStandard": "能解释 JSON 转换"
+    },
+    {
+      "id": 51,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Deserialization",
+      "chinese": "反序列化",
+      "explanation": "把传输格式恢复成程序对象。",
+      "masteryStandard": "能处理 API 返回"
+    },
+    {
+      "id": 52,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "FastAPI",
+      "chinese": "Python Web 框架",
+      "explanation": "适合快速开发类型明确的 Python API 服务。",
+      "masteryStandard": "能写路由和参数校验"
+    },
+    {
+      "id": 53,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Pydantic",
+      "chinese": "数据校验库",
+      "explanation": "FastAPI 常用的请求与响应数据模型工具。",
+      "masteryStandard": "会定义 BaseModel"
+    },
+    {
+      "id": 54,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Route",
+      "chinese": "路由",
+      "explanation": "把 URL 和 HTTP 方法映射到处理函数。",
+      "masteryStandard": "能写 GET/POST 路由"
+    },
+    {
+      "id": 55,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Middleware",
+      "chinese": "中间件",
+      "explanation": "在请求进入或响应返回前统一处理逻辑。",
+      "masteryStandard": "理解日志、鉴权、CORS"
+    },
+    {
+      "id": 56,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "CORS",
+      "chinese": "跨源资源共享",
+      "explanation": "控制浏览器是否允许前端访问不同域名的后端。",
+      "masteryStandard": "能排查跨域错误"
+    },
+    {
+      "id": 57,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Streaming Response",
+      "chinese": "流式响应",
+      "explanation": "服务端持续分块返回内容，让用户边生成边看到。",
+      "masteryStandard": "理解 SSE 场景"
+    },
+    {
+      "id": 58,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "SSE",
+      "chinese": "服务器发送事件",
+      "explanation": "服务器单向持续向浏览器推送文本事件的协议。",
+      "masteryStandard": "能说明与 WebSocket 区别"
+    },
+    {
+      "id": 59,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "WebSocket",
+      "chinese": "双向长连接",
+      "explanation": "客户端与服务器可持续双向通信。",
+      "masteryStandard": "知道实时协作场景"
+    },
+    {
+      "id": 60,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Rate Limit",
+      "chinese": "限流",
+      "explanation": "限制单位时间内请求数量，保护服务和控制成本。",
+      "masteryStandard": "能设计基础限制"
+    },
+    {
+      "id": 61,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Retry",
+      "chinese": "重试",
+      "explanation": "请求临时失败后按规则再次尝试。",
+      "masteryStandard": "理解指数退避"
+    },
+    {
+      "id": 62,
+      "category": "API 与后端",
+      "week": "第2周",
+      "english": "Timeout",
+      "chinese": "超时",
+      "explanation": "等待超过限定时间后终止请求。",
+      "masteryStandard": "会设置合理超时"
+    },
+    {
+      "id": 63,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "AI",
+      "chinese": "人工智能",
+      "explanation": "让机器完成通常需要人类智能的任务。",
+      "masteryStandard": "能结合业务解释"
+    },
+    {
+      "id": 64,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Machine Learning",
+      "chinese": "机器学习",
+      "explanation": "让模型从数据中学习规律的方法。",
+      "masteryStandard": "知道与传统规则区别"
+    },
+    {
+      "id": 65,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "NLP",
+      "chinese": "自然语言处理",
+      "explanation": "让计算机理解和生成自然语言的领域。",
+      "masteryStandard": "知道常见任务"
+    },
+    {
+      "id": 66,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "LLM",
+      "chinese": "大语言模型",
+      "explanation": "在大量文本上训练、能理解和生成语言的模型。",
+      "masteryStandard": "能解释能力与局限"
+    },
+    {
+      "id": 67,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Model",
+      "chinese": "模型",
+      "explanation": "根据输入产生预测或生成结果的系统。",
+      "masteryStandard": "能区分模型与应用"
+    },
+    {
+      "id": 68,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "SOTA",
+      "chinese": "当前最佳水平",
+      "explanation": "State of the Art，某一任务当下领先的方法或结果。",
+      "masteryStandard": "理解是动态概念"
+    },
+    {
+      "id": 69,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Parameter",
+      "chinese": "模型参数",
+      "explanation": "训练过程中学习到的内部数值；与函数形参语境不同。",
+      "masteryStandard": "能分清两种语境"
+    },
+    {
+      "id": 70,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Inference",
+      "chinese": "推理",
+      "explanation": "使用训练好的模型生成结果的过程。",
+      "masteryStandard": "理解调用 API 即推理"
+    },
+    {
+      "id": 71,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Training",
+      "chinese": "训练",
+      "explanation": "通过数据更新模型参数的过程。",
+      "masteryStandard": "知道与推理区别"
+    },
+    {
+      "id": 72,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Fine-tuning",
+      "chinese": "微调",
+      "explanation": "用特定数据继续训练模型，使其适配任务或风格。",
+      "masteryStandard": "知道何时不需要微调"
+    },
+    {
+      "id": 73,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Prompt",
+      "chinese": "提示词",
+      "explanation": "发送给模型的指令、背景、输入和输出要求。",
+      "masteryStandard": "能写结构化 Prompt"
+    },
+    {
+      "id": 74,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Prompt Engineering",
+      "chinese": "提示词工程",
+      "explanation": "系统设计、测试和优化提示词的方法。",
+      "masteryStandard": "会迭代和评估"
+    },
+    {
+      "id": 75,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "System Prompt",
+      "chinese": "系统提示词",
+      "explanation": "定义模型角色、规则和最高层行为的指令。",
+      "masteryStandard": "能划分稳定规则"
+    },
+    {
+      "id": 76,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "User Prompt",
+      "chinese": "用户提示词",
+      "explanation": "用户在具体任务中提交的需求或输入。",
+      "masteryStandard": "能与系统指令分层"
+    },
+    {
+      "id": 77,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Few-shot",
+      "chinese": "少样本示例",
+      "explanation": "在提示词中给少量输入输出示例引导模型。",
+      "masteryStandard": "会选择代表性示例"
+    },
+    {
+      "id": 78,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Zero-shot",
+      "chinese": "零样本",
+      "explanation": "不给示例，只依靠指令让模型完成任务。",
+      "masteryStandard": "知道适用简单任务"
+    },
+    {
+      "id": 79,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Chain of Thought",
+      "chinese": "思维链",
+      "explanation": "模型解决复杂问题时的中间推理过程概念。",
+      "masteryStandard": "能说明不等于可靠事实"
+    },
+    {
+      "id": 80,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Context",
+      "chinese": "上下文",
+      "explanation": "模型当前可见的对话、资料和指令。",
+      "masteryStandard": "能管理相关信息"
+    },
+    {
+      "id": 81,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Context Window",
+      "chinese": "上下文窗口",
+      "explanation": "单次请求中模型可处理的 Token 总量上限。",
+      "masteryStandard": "会估算与裁剪"
+    },
+    {
+      "id": 82,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Token",
+      "chinese": "文本计量单位",
+      "explanation": "模型处理文本的基本切分单位，影响上下文和费用。",
+      "masteryStandard": "理解不是等同字数"
+    },
+    {
+      "id": 83,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Temperature",
+      "chinese": "温度",
+      "explanation": "控制输出随机性和多样性的生成参数。",
+      "masteryStandard": "会按任务调整"
+    },
+    {
+      "id": 84,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Top P",
+      "chinese": "核采样参数",
+      "explanation": "从累计概率范围内选择候选 Token。",
+      "masteryStandard": "知道通常不与温度同时乱调"
+    },
+    {
+      "id": 85,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Structured Output",
+      "chinese": "结构化输出",
+      "explanation": "让模型按固定字段或 Schema 返回数据。",
+      "masteryStandard": "能获得稳定 JSON"
+    },
+    {
+      "id": 86,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "JSON Schema",
+      "chinese": "JSON 结构规范",
+      "explanation": "描述字段类型、必填项和限制的标准。",
+      "masteryStandard": "会定义工具参数"
+    },
+    {
+      "id": 87,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Hallucination",
+      "chinese": "幻觉",
+      "explanation": "模型生成看似合理但错误或无依据的信息。",
+      "masteryStandard": "会用检索、校验降低"
+    },
+    {
+      "id": 88,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Grounding",
+      "chinese": "事实锚定",
+      "explanation": "让回答依据指定数据或可靠来源。",
+      "masteryStandard": "能设计引用与证据"
+    },
+    {
+      "id": 89,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Evaluation",
+      "chinese": "评估",
+      "explanation": "用样例和指标测试模型或应用效果。",
+      "masteryStandard": "会建立测试集"
+    },
+    {
+      "id": 90,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Latency",
+      "chinese": "延迟",
+      "explanation": "从发出请求到获得结果的时间。",
+      "masteryStandard": "能分析体验瓶颈"
+    },
+    {
+      "id": 91,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Cost",
+      "chinese": "成本",
+      "explanation": "模型 Token、存储、计算和外部服务费用。",
+      "masteryStandard": "会做基本控制"
+    },
+    {
+      "id": 92,
+      "category": "LLM 与 Prompt",
+      "week": "第3周",
+      "english": "Model Provider",
+      "chinese": "模型提供商",
+      "explanation": "提供模型和 API 的平台，如 OpenAI、Anthropic、DeepSeek。",
+      "masteryStandard": "能做模型切换"
+    },
+    {
+      "id": 93,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Agent",
+      "chinese": "智能体",
+      "explanation": "能围绕目标观察、决策、调用工具并多步执行的系统。",
+      "masteryStandard": "能与普通聊天区分"
+    },
+    {
+      "id": 94,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Goal",
+      "chinese": "目标",
+      "explanation": "Agent 要完成的最终任务或结果。",
+      "masteryStandard": "能拆成可验证结果"
+    },
+    {
+      "id": 95,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Planning",
+      "chinese": "规划",
+      "explanation": "把目标拆成多个可执行步骤。",
+      "masteryStandard": "能解释计划生成"
+    },
+    {
+      "id": 96,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Planner",
+      "chinese": "规划器",
+      "explanation": "负责决定步骤、顺序或下一动作的组件。",
+      "masteryStandard": "会设计简单 Planner"
+    },
+    {
+      "id": 97,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Action",
+      "chinese": "动作",
+      "explanation": "Agent 决定执行的具体操作。",
+      "masteryStandard": "能映射到工具调用"
+    },
+    {
+      "id": 98,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Observation",
+      "chinese": "观察结果",
+      "explanation": "工具执行或环境返回给 Agent 的信息。",
+      "masteryStandard": "会用于下一步决策"
+    },
+    {
+      "id": 99,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Tool",
+      "chinese": "工具",
+      "explanation": "Agent 可调用的外部函数、API 或服务。",
+      "masteryStandard": "能定义输入输出"
+    },
+    {
+      "id": 100,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Tool Use",
+      "chinese": "工具使用",
+      "explanation": "模型选择并调用工具完成任务的过程。",
+      "masteryStandard": "能讲选择逻辑"
+    },
+    {
+      "id": 101,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Function Calling",
+      "chinese": "函数调用",
+      "explanation": "模型输出函数名与参数，由程序执行后再把结果返回模型。",
+      "masteryStandard": "能完成闭环"
+    },
+    {
+      "id": 102,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Tool Calling",
+      "chinese": "工具调用",
+      "explanation": "与 Function Calling 接近，更强调调用各种外部能力。",
+      "masteryStandard": "能解释同义差异"
+    },
+    {
+      "id": 103,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Workflow",
+      "chinese": "工作流",
+      "explanation": "预先组织好的步骤、条件和数据流。",
+      "masteryStandard": "能画出业务流程"
+    },
+    {
+      "id": 104,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Orchestration",
+      "chinese": "编排",
+      "explanation": "协调模型、工具、状态和多个步骤的执行。",
+      "masteryStandard": "能解释控制层"
+    },
+    {
+      "id": 105,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "State",
+      "chinese": "状态",
+      "explanation": "工作流当前保存的数据与执行位置。",
+      "masteryStandard": "会设计状态字段"
+    },
+    {
+      "id": 106,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "State Management",
+      "chinese": "状态管理",
+      "explanation": "创建、更新、持久化和读取状态的机制。",
+      "masteryStandard": "能避免状态混乱"
+    },
+    {
+      "id": 107,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Memory",
+      "chinese": "记忆",
+      "explanation": "让 Agent 保存并在之后利用历史信息的机制。",
+      "masteryStandard": "能区分上下文与记忆"
+    },
+    {
+      "id": 108,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Short-term Memory",
+      "chinese": "短期记忆",
+      "explanation": "当前任务或会话内使用的信息。",
+      "masteryStandard": "会做窗口与摘要"
+    },
+    {
+      "id": 109,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Long-term Memory",
+      "chinese": "长期记忆",
+      "explanation": "跨会话长期保存并按需检索的信息。",
+      "masteryStandard": "会用数据库或向量库"
+    },
+    {
+      "id": 110,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Context Management",
+      "chinese": "上下文管理",
+      "explanation": "选择、压缩、排序和注入模型所需信息。",
+      "masteryStandard": "能控制 Token"
+    },
+    {
+      "id": 111,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Checkpoint",
+      "chinese": "检查点",
+      "explanation": "保存工作流状态，支持暂停、恢复或故障重试。",
+      "masteryStandard": "理解持久化执行"
+    },
+    {
+      "id": 112,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Human in the Loop",
+      "chinese": "人在回路",
+      "explanation": "在关键步骤让人确认、修改或接管。",
+      "masteryStandard": "会设置审批节点"
+    },
+    {
+      "id": 113,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Guardrail",
+      "chinese": "护栏",
+      "explanation": "限制模型行为、输入或输出的安全与质量规则。",
+      "masteryStandard": "会做参数和输出校验"
+    },
+    {
+      "id": 114,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Reflection",
+      "chinese": "反思",
+      "explanation": "让系统检查上一轮结果并尝试纠错。",
+      "masteryStandard": "知道成本与收益"
+    },
+    {
+      "id": 115,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Multi-step Reasoning",
+      "chinese": "多步推理",
+      "explanation": "通过多轮决策和工具结果完成复杂任务。",
+      "masteryStandard": "能追踪执行链"
+    },
+    {
+      "id": 116,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Multi-Agent",
+      "chinese": "多智能体",
+      "explanation": "多个角色或 Agent 分工协作的系统。",
+      "masteryStandard": "知道不是越多越好"
+    },
+    {
+      "id": 117,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Supervisor",
+      "chinese": "监督者",
+      "explanation": "在多 Agent 系统中负责分配任务和汇总结果的角色。",
+      "masteryStandard": "能设计简单分工"
+    },
+    {
+      "id": 118,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Handoff",
+      "chinese": "任务移交",
+      "explanation": "一个 Agent 把任务和上下文交给另一个 Agent。",
+      "masteryStandard": "能定义移交条件"
+    },
+    {
+      "id": 119,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Tool Registry",
+      "chinese": "工具注册表",
+      "explanation": "集中保存工具名称、描述、Schema 和实现的结构。",
+      "masteryStandard": "会管理多个工具"
+    },
+    {
+      "id": 120,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "ReAct",
+      "chinese": "推理与行动范式",
+      "explanation": "Reason + Act：在思考、行动、观察之间循环。",
+      "masteryStandard": "能描述执行循环"
+    },
+    {
+      "id": 121,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "DAG",
+      "chinese": "有向无环图",
+      "explanation": "没有循环依赖的任务节点图，适合确定性工作流。",
+      "masteryStandard": "会判断节点依赖"
+    },
+    {
+      "id": 122,
+      "category": "Agent 核心",
+      "week": "第4周",
+      "english": "Idempotency",
+      "chinese": "幂等性",
+      "explanation": "同一操作重复执行，结果仍保持一致。",
+      "masteryStandard": "能防止重复写入"
+    },
+    {
+      "id": 123,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "RAG",
+      "chinese": "检索增强生成",
+      "explanation": "先检索外部知识，再让模型依据结果生成回答。",
+      "masteryStandard": "能说完整流程"
+    },
+    {
+      "id": 124,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Retrieval",
+      "chinese": "检索",
+      "explanation": "从知识库中找出与问题相关的信息。",
+      "masteryStandard": "能解释召回阶段"
+    },
+    {
+      "id": 125,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Generation",
+      "chinese": "生成",
+      "explanation": "模型依据提示词和检索内容组织最终回答。",
+      "masteryStandard": "能约束依据"
+    },
+    {
+      "id": 126,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Embedding",
+      "chinese": "向量嵌入",
+      "explanation": "把文本转换成可比较语义相似度的数字向量。",
+      "masteryStandard": "能解释用途"
+    },
+    {
+      "id": 127,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Vector",
+      "chinese": "向量",
+      "explanation": "表示文本特征的一组数字。",
+      "masteryStandard": "理解语义空间"
+    },
+    {
+      "id": 128,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Vector Database",
+      "chinese": "向量数据库",
+      "explanation": "存储向量并支持相似度搜索的数据库。",
+      "masteryStandard": "知道常见用途"
+    },
+    {
+      "id": 129,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Similarity Search",
+      "chinese": "相似度搜索",
+      "explanation": "按向量距离找最相近内容。",
+      "masteryStandard": "能解释 Top K"
+    },
+    {
+      "id": 130,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Cosine Similarity",
+      "chinese": "余弦相似度",
+      "explanation": "用向量夹角衡量方向相似程度。",
+      "masteryStandard": "知道值越高通常越相似"
+    },
+    {
+      "id": 131,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Chunk",
+      "chinese": "文本块",
+      "explanation": "文档切分后的基本检索单元。",
+      "masteryStandard": "能选择合理大小"
+    },
+    {
+      "id": 132,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Chunking",
+      "chinese": "文本切分",
+      "explanation": "把长文档拆成适合嵌入和检索的片段。",
+      "masteryStandard": "理解重叠与边界"
+    },
+    {
+      "id": 133,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Chunk Size",
+      "chinese": "分块大小",
+      "explanation": "每个文本块包含的 Token 或字符数量。",
+      "masteryStandard": "会按文档调参"
+    },
+    {
+      "id": 134,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Chunk Overlap",
+      "chinese": "分块重叠",
+      "explanation": "相邻文本块重复的一部分内容。",
+      "masteryStandard": "会减少语义断裂"
+    },
+    {
+      "id": 135,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Metadata",
+      "chinese": "元数据",
+      "explanation": "描述文本块来源、标题、时间等的附加字段。",
+      "masteryStandard": "会用于过滤和引用"
+    },
+    {
+      "id": 136,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Top K",
+      "chinese": "前 K 条结果",
+      "explanation": "检索时返回相似度最高的 K 个候选。",
+      "masteryStandard": "能权衡召回与噪声"
+    },
+    {
+      "id": 137,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Recall",
+      "chinese": "召回率",
+      "explanation": "相关内容中有多少被成功检索出来。",
+      "masteryStandard": "能解释召回不足"
+    },
+    {
+      "id": 138,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Precision",
+      "chinese": "准确率/精确率",
+      "explanation": "检索结果中有多少确实相关。",
+      "masteryStandard": "能解释噪声问题"
+    },
+    {
+      "id": 139,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Reranking",
+      "chinese": "重排序",
+      "explanation": "用更精细模型重新排列初步检索结果。",
+      "masteryStandard": "知道二阶段检索"
+    },
+    {
+      "id": 140,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Query Rewrite",
+      "chinese": "查询改写",
+      "explanation": "把用户问题改写得更适合检索。",
+      "masteryStandard": "会处理模糊问题"
+    },
+    {
+      "id": 141,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Hybrid Search",
+      "chinese": "混合检索",
+      "explanation": "结合关键词检索与向量检索。",
+      "masteryStandard": "知道何时更稳"
+    },
+    {
+      "id": 142,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Keyword Search",
+      "chinese": "关键词检索",
+      "explanation": "按字词匹配查找内容，如 BM25。",
+      "masteryStandard": "适合专有名词"
+    },
+    {
+      "id": 143,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Knowledge Base",
+      "chinese": "知识库",
+      "explanation": "供系统检索和使用的结构化资料集合。",
+      "masteryStandard": "会定义数据边界"
+    },
+    {
+      "id": 144,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Database",
+      "chinese": "数据库",
+      "explanation": "持久化存储和查询结构化数据的系统。",
+      "masteryStandard": "理解表与查询"
+    },
+    {
+      "id": 145,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "SQL",
+      "chinese": "结构化查询语言",
+      "explanation": "操作关系型数据库的语言。",
+      "masteryStandard": "会基础增删改查"
+    },
+    {
+      "id": 146,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "PostgreSQL",
+      "chinese": "关系型数据库",
+      "explanation": "功能完整的开源 SQL 数据库，Supabase 的核心数据库。",
+      "masteryStandard": "会建表和查询"
+    },
+    {
+      "id": 147,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "SQLite",
+      "chinese": "轻量数据库",
+      "explanation": "把数据库保存为单个本地文件，适合小型项目。",
+      "masteryStandard": "会用于原型"
+    },
+    {
+      "id": 148,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "CRUD",
+      "chinese": "增删改查",
+      "explanation": "Create、Read、Update、Delete 四类数据操作。",
+      "masteryStandard": "能实现完整闭环"
+    },
+    {
+      "id": 149,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Schema",
+      "chinese": "数据模式",
+      "explanation": "数据库表、字段、类型和约束的结构定义。",
+      "masteryStandard": "会设计基础表"
+    },
+    {
+      "id": 150,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Index",
+      "chinese": "索引",
+      "explanation": "提高数据库查询速度的数据结构。",
+      "masteryStandard": "知道会增加写入成本"
+    },
+    {
+      "id": 151,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "Supabase",
+      "chinese": "后端即服务",
+      "explanation": "提供 PostgreSQL、认证、存储、实时能力和 API。",
+      "masteryStandard": "能接入 Typely"
+    },
+    {
+      "id": 152,
+      "category": "RAG 与数据库",
+      "week": "第5周",
+      "english": "RLS",
+      "chinese": "行级安全",
+      "explanation": "Row Level Security，按用户或条件限制可访问的数据行。",
+      "masteryStandard": "会保护用户数据"
+    },
+    {
+      "id": 153,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "LangChain",
+      "chinese": "LLM 应用框架",
+      "explanation": "提供模型、Prompt、工具、检索等组件抽象。",
+      "masteryStandard": "知道核心组件"
+    },
+    {
+      "id": 154,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "LangGraph",
+      "chinese": "有状态 Agent 工作流框架",
+      "explanation": "用节点和边构建可控制、可恢复的 Agent 流程。",
+      "masteryStandard": "能搭建简单图"
+    },
+    {
+      "id": 155,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Node",
+      "chinese": "节点",
+      "explanation": "LangGraph 中执行某段逻辑的单元。",
+      "masteryStandard": "会写节点函数"
+    },
+    {
+      "id": 156,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Edge",
+      "chinese": "边",
+      "explanation": "连接节点并决定执行流向。",
+      "masteryStandard": "会配置普通边"
+    },
+    {
+      "id": 157,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Conditional Edge",
+      "chinese": "条件边",
+      "explanation": "根据状态或结果动态选择下一个节点。",
+      "masteryStandard": "能写路由条件"
+    },
+    {
+      "id": 158,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "ToolNode",
+      "chinese": "工具节点",
+      "explanation": "LangGraph 中执行模型工具调用的预置节点。",
+      "masteryStandard": "会接工具列表"
+    },
+    {
+      "id": 159,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Graph",
+      "chinese": "图",
+      "explanation": "由节点和边构成的执行结构。",
+      "masteryStandard": "能读懂流程图"
+    },
+    {
+      "id": 160,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "MCP",
+      "chinese": "模型上下文协议",
+      "explanation": "Model Context Protocol，标准化模型连接工具和数据源的方式。",
+      "masteryStandard": "能解释解决的问题"
+    },
+    {
+      "id": 161,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "MCP Server",
+      "chinese": "MCP 服务端",
+      "explanation": "向模型或客户端暴露工具、资源和提示模板。",
+      "masteryStandard": "能说明职责"
+    },
+    {
+      "id": 162,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "MCP Client",
+      "chinese": "MCP 客户端",
+      "explanation": "连接 MCP Server 并发现、调用能力的一方。",
+      "masteryStandard": "能说明交互过程"
+    },
+    {
+      "id": 163,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Resource",
+      "chinese": "资源",
+      "explanation": "MCP 中可读取的上下文或数据内容。",
+      "masteryStandard": "能区分 Tool"
+    },
+    {
+      "id": 164,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Tool Schema",
+      "chinese": "工具结构定义",
+      "explanation": "描述工具名称、用途、参数类型和必填项。",
+      "masteryStandard": "会写清晰 Schema"
+    },
+    {
+      "id": 165,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "LangChain Expression Language",
+      "chinese": "LangChain 表达式语言",
+      "explanation": "LCEL，用管道方式组合模型、Prompt 和解析器。",
+      "masteryStandard": "能读懂基础链"
+    },
+    {
+      "id": 166,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "LlamaIndex",
+      "chinese": "数据与 RAG 框架",
+      "explanation": "偏向数据接入、索引和检索增强应用。",
+      "masteryStandard": "知道定位"
+    },
+    {
+      "id": 167,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Dify",
+      "chinese": "低代码 LLM 应用平台",
+      "explanation": "可视化构建工作流、知识库和 Agent。",
+      "masteryStandard": "能比较代码框架"
+    },
+    {
+      "id": 168,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Coze",
+      "chinese": "智能体搭建平台",
+      "explanation": "提供可视化 Agent、插件和工作流能力。",
+      "masteryStandard": "知道适用场景"
+    },
+    {
+      "id": 169,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "OpenAI API",
+      "chinese": "OpenAI 模型接口",
+      "explanation": "通过 API 调用 OpenAI 模型和相关能力。",
+      "masteryStandard": "能完成请求"
+    },
+    {
+      "id": 170,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Anthropic API",
+      "chinese": "Anthropic 模型接口",
+      "explanation": "通过 API 调用 Claude 系列模型。",
+      "masteryStandard": "知道接口差异"
+    },
+    {
+      "id": 171,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "DeepSeek API",
+      "chinese": "DeepSeek 模型接口",
+      "explanation": "通过兼容或官方方式调用 DeepSeek 模型。",
+      "masteryStandard": "能用于现有项目"
+    },
+    {
+      "id": 172,
+      "category": "框架与协议",
+      "week": "第6周",
+      "english": "Model Abstraction",
+      "chinese": "模型抽象层",
+      "explanation": "用统一接口屏蔽不同模型提供商差异。",
+      "masteryStandard": "能设计可切换模型"
+    },
+    {
+      "id": 173,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "HTML",
+      "chinese": "超文本标记语言",
+      "explanation": "定义网页内容结构。",
+      "masteryStandard": "能看懂页面结构"
+    },
+    {
+      "id": 174,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "CSS",
+      "chinese": "层叠样式表",
+      "explanation": "控制网页布局、颜色和视觉样式。",
+      "masteryStandard": "能修改常见样式"
+    },
+    {
+      "id": 175,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "JavaScript",
+      "chinese": "JavaScript 语言",
+      "explanation": "浏览器主要编程语言，用于交互和数据处理。",
+      "masteryStandard": "能读写基础逻辑"
+    },
+    {
+      "id": 176,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "TypeScript",
+      "chinese": "类型化 JavaScript",
+      "explanation": "在 JavaScript 上增加静态类型检查。",
+      "masteryStandard": "能定义常用类型"
+    },
+    {
+      "id": 177,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "React",
+      "chinese": "前端 UI 库",
+      "explanation": "用组件和状态构建交互界面。",
+      "masteryStandard": "理解组件和 Hook"
+    },
+    {
+      "id": 178,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Next.js",
+      "chinese": "React 全栈框架",
+      "explanation": "提供路由、服务端能力、构建和部署约定。",
+      "masteryStandard": "能开发并部署项目"
+    },
+    {
+      "id": 179,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Component",
+      "chinese": "组件",
+      "explanation": "可复用的界面与逻辑单元。",
+      "masteryStandard": "会拆分页面"
+    },
+    {
+      "id": 180,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Props",
+      "chinese": "组件属性",
+      "explanation": "父组件传给子组件的数据。",
+      "masteryStandard": "会定义和使用"
+    },
+    {
+      "id": 181,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "State",
+      "chinese": "前端状态",
+      "explanation": "界面运行中会变化并影响渲染的数据。",
+      "masteryStandard": "会 useState"
+    },
+    {
+      "id": 182,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Hook",
+      "chinese": "钩子函数",
+      "explanation": "React 中复用状态和副作用逻辑的机制。",
+      "masteryStandard": "会常用 Hook"
+    },
+    {
+      "id": 183,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Frontend",
+      "chinese": "前端",
+      "explanation": "用户直接看到和操作的界面部分。",
+      "masteryStandard": "能说明职责"
+    },
+    {
+      "id": 184,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Backend",
+      "chinese": "后端",
+      "explanation": "处理业务逻辑、认证、数据库和接口的服务。",
+      "masteryStandard": "能说明职责"
+    },
+    {
+      "id": 185,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Deployment",
+      "chinese": "部署",
+      "explanation": "把应用发布到可访问环境的过程。",
+      "masteryStandard": "能独立上线"
+    },
+    {
+      "id": 186,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Vercel",
+      "chinese": "前端部署平台",
+      "explanation": "适合部署 Next.js 项目并管理环境变量。",
+      "masteryStandard": "会部署与排错"
+    },
+    {
+      "id": 187,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Cloudflare Pages",
+      "chinese": "静态与前端部署平台",
+      "explanation": "提供全球分发和前端托管。",
+      "masteryStandard": "知道适用限制"
+    },
+    {
+      "id": 188,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "VPS",
+      "chinese": "虚拟专用服务器",
+      "explanation": "可自行安装和运行后端服务的云服务器。",
+      "masteryStandard": "理解维护责任"
+    },
+    {
+      "id": 189,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Docker",
+      "chinese": "容器工具",
+      "explanation": "把应用和依赖打包为可重复运行的镜像。",
+      "masteryStandard": "能写基础 Dockerfile"
+    },
+    {
+      "id": 190,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Container",
+      "chinese": "容器",
+      "explanation": "由镜像启动的隔离应用运行实例。",
+      "masteryStandard": "能解释与虚拟机区别"
+    },
+    {
+      "id": 191,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Image",
+      "chinese": "镜像",
+      "explanation": "用于创建容器的只读应用模板。",
+      "masteryStandard": "会构建与运行"
+    },
+    {
+      "id": 192,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Nginx",
+      "chinese": "Web 服务器/反向代理",
+      "explanation": "常用于域名转发、HTTPS 和静态文件服务。",
+      "masteryStandard": "能解释反向代理"
+    },
+    {
+      "id": 193,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Linux",
+      "chinese": "服务器常用操作系统",
+      "explanation": "多数云服务器和容器的运行环境。",
+      "masteryStandard": "会基础命令"
+    },
+    {
+      "id": 194,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "CI/CD",
+      "chinese": "持续集成与持续交付",
+      "explanation": "代码提交后自动测试、构建和部署的流程。",
+      "masteryStandard": "能描述 GitHub Actions"
+    },
+    {
+      "id": 195,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Git",
+      "chinese": "版本控制系统",
+      "explanation": "记录代码变化并支持协作和回退。",
+      "masteryStandard": "会常用命令"
+    },
+    {
+      "id": 196,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "GitHub",
+      "chinese": "代码托管平台",
+      "explanation": "保存 Git 仓库、协作并展示项目。",
+      "masteryStandard": "会管理仓库"
+    },
+    {
+      "id": 197,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Repository",
+      "chinese": "代码仓库",
+      "explanation": "保存项目代码和版本历史的目录。",
+      "masteryStandard": "能管理分支"
+    },
+    {
+      "id": 198,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Branch",
+      "chinese": "分支",
+      "explanation": "从主线独立开发修改的代码线。",
+      "masteryStandard": "会创建与合并"
+    },
+    {
+      "id": 199,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Commit",
+      "chinese": "提交",
+      "explanation": "一次有说明的版本快照。",
+      "masteryStandard": "会写清晰信息"
+    },
+    {
+      "id": 200,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Pull Request",
+      "chinese": "合并请求",
+      "explanation": "请求审查并把分支修改合并到目标分支。",
+      "masteryStandard": "理解协作流程"
+    },
+    {
+      "id": 201,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Logging",
+      "chinese": "日志记录",
+      "explanation": "记录运行事件、错误和关键上下文。",
+      "masteryStandard": "会分级记录"
+    },
+    {
+      "id": 202,
+      "category": "前端、部署与工程",
+      "week": "第7周",
+      "english": "Monitoring",
+      "chinese": "监控",
+      "explanation": "持续观察服务性能、错误和可用性。",
+      "masteryStandard": "知道关键指标"
+    },
+    {
+      "id": 203,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Architecture",
+      "chinese": "架构",
+      "explanation": "系统主要组件、职责和交互方式的整体设计。",
+      "masteryStandard": "能画项目架构"
+    },
+    {
+      "id": 204,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Scalability",
+      "chinese": "可扩展性",
+      "explanation": "系统在用户量或数据量增加时继续工作的能力。",
+      "masteryStandard": "能说扩展策略"
+    },
+    {
+      "id": 205,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Reliability",
+      "chinese": "可靠性",
+      "explanation": "系统持续正确运行并从故障恢复的能力。",
+      "masteryStandard": "能提超时、重试、降级"
+    },
+    {
+      "id": 206,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Availability",
+      "chinese": "可用性",
+      "explanation": "系统在需要时可以正常访问的程度。",
+      "masteryStandard": "理解与可靠性的联系"
+    },
+    {
+      "id": 207,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Observability",
+      "chinese": "可观测性",
+      "explanation": "通过日志、指标和追踪理解系统内部状态。",
+      "masteryStandard": "能说三大支柱"
+    },
+    {
+      "id": 208,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Metrics",
+      "chinese": "指标",
+      "explanation": "量化系统性能或业务效果的数据。",
+      "masteryStandard": "会选择延迟、错误率等"
+    },
+    {
+      "id": 209,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Tracing",
+      "chinese": "链路追踪",
+      "explanation": "记录一次请求经过多个组件的完整路径。",
+      "masteryStandard": "能定位慢点"
+    },
+    {
+      "id": 210,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Cache",
+      "chinese": "缓存",
+      "explanation": "临时保存常用结果以减少重复计算或请求。",
+      "masteryStandard": "理解失效策略"
+    },
+    {
+      "id": 211,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Concurrency",
+      "chinese": "并发",
+      "explanation": "多个任务在重叠时间内推进。",
+      "masteryStandard": "能解释异步并发"
+    },
+    {
+      "id": 212,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Queue",
+      "chinese": "队列",
+      "explanation": "按顺序暂存待处理任务的数据结构或服务。",
+      "masteryStandard": "知道削峰场景"
+    },
+    {
+      "id": 213,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Fallback",
+      "chinese": "降级方案",
+      "explanation": "主要能力失败时使用备用模型、规则或结果。",
+      "masteryStandard": "会设计兜底"
+    },
+    {
+      "id": 214,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Error Handling",
+      "chinese": "错误处理",
+      "explanation": "捕获、分类、记录并向用户返回可理解错误。",
+      "masteryStandard": "能讲项目实践"
+    },
+    {
+      "id": 215,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Prompt Injection",
+      "chinese": "提示注入",
+      "explanation": "恶意输入试图改变系统规则或泄露信息。",
+      "masteryStandard": "会做隔离与校验"
+    },
+    {
+      "id": 216,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Data Privacy",
+      "chinese": "数据隐私",
+      "explanation": "保护用户数据不被越权访问或泄露。",
+      "masteryStandard": "能说密钥与权限"
+    },
+    {
+      "id": 217,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Unit Test",
+      "chinese": "单元测试",
+      "explanation": "验证单个函数或组件行为的测试。",
+      "masteryStandard": "会写核心逻辑测试"
+    },
+    {
+      "id": 218,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Integration Test",
+      "chinese": "集成测试",
+      "explanation": "验证多个组件协作是否正确的测试。",
+      "masteryStandard": "会测 API+数据库"
+    },
+    {
+      "id": 219,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "End-to-End Test",
+      "chinese": "端到端测试",
+      "explanation": "从用户入口到最终结果验证完整流程。",
+      "masteryStandard": "能定义关键路径"
+    },
+    {
+      "id": 220,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Benchmark",
+      "chinese": "基准测试",
+      "explanation": "用固定任务比较模型或系统性能。",
+      "masteryStandard": "会建立对比"
+    },
+    {
+      "id": 221,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "Trade-off",
+      "chinese": "权衡",
+      "explanation": "在速度、成本、质量和复杂度之间做选择。",
+      "masteryStandard": "能解释方案原因"
+    },
+    {
+      "id": 222,
+      "category": "面试与系统设计",
+      "week": "第8周",
+      "english": "STAR",
+      "chinese": "面试表达法",
+      "explanation": "Situation、Task、Action、Result，用于结构化讲经历。",
+      "masteryStandard": "能讲项目案例"
+    }
+  ],
+  "plan": [
+    {
+      "week": "第1周",
+      "theme": "Python 工程基础",
+      "coreTerms": "Class、Module、Exception、File I/O、JSON、.env、虚拟环境",
+      "project": "把 Typely/KeyboardHub 的 Python 工具代码拆成模块；完成文件与 JSON 练习",
+      "completionStandard": "能独立解释并运行一个模块化 CLI"
+    },
+    {
+      "week": "第2周",
+      "theme": "API 与 FastAPI",
+      "coreTerms": "HTTP、Request/Response、GET/POST、Authentication、Pydantic、CORS",
+      "project": "写一个 FastAPI 后端，封装 DeepSeek 调用并处理异常",
+      "completionStandard": "前端可调用；密钥不暴露；错误信息清楚"
+    },
+    {
+      "week": "第3周",
+      "theme": "LLM 与 Prompt",
+      "coreTerms": "LLM、Token、Context、System Prompt、Structured Output、Hallucination",
+      "project": "为 Typely 写结构化 Prompt，并输出可校验 JSON",
+      "completionStandard": "有 Prompt 文件、测试样例和优化记录"
+    },
+    {
+      "week": "第4周",
+      "theme": "Agent 核心流程",
+      "coreTerms": "Planner、Tool、Action、Observation、Memory、Workflow、State",
+      "project": "实现 2–3 个真实工具：生成计划、收藏单词、调整难度",
+      "completionStandard": "能展示“决策→调用→结果→继续”的闭环"
+    },
+    {
+      "week": "第5周",
+      "theme": "RAG 与记忆",
+      "coreTerms": "Embedding、Chunking、Vector DB、Top K、Reranking、Long-term Memory",
+      "project": "给项目加入词汇知识库或键盘搭配知识检索",
+      "completionStandard": "回答能引用检索内容，并说明召回优化"
+    },
+    {
+      "week": "第6周",
+      "theme": "LangGraph 与 MCP",
+      "coreTerms": "State、Node、Edge、Conditional Edge、ToolNode、Checkpoint、MCP",
+      "project": "用 LangGraph 重构一个多步骤流程；理解 MCP 客户端/服务端",
+      "completionStandard": "可画流程图并讲清状态如何流转"
+    },
+    {
+      "week": "第7周",
+      "theme": "项目工程化",
+      "coreTerms": "Supabase、RLS、Streaming、Docker、Logging、CI/CD、Deployment",
+      "project": "完善登录/数据库/历史记录；部署并收集真实反馈",
+      "completionStandard": "线上可访问；README、演示、日志齐全"
+    },
+    {
+      "week": "第8周",
+      "theme": "面试准备",
+      "coreTerms": "Architecture、Trade-off、Error Handling、Evaluation、STAR",
+      "project": "整理项目讲解稿；每天模拟 5 道高频题",
+      "completionStandard": "能在 3 分钟与 10 分钟版本讲清项目"
+    }
+  ],
+  "exportedAt": "2026-07-11T08:51:53.166237"
+}
