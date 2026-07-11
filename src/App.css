@@ -593,12 +593,32 @@ button {
   word-break: break-word;
 }
 
+.flashcard__front-tip {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--label-secondary);
+  text-align: center;
+}
+
+.flashcard__bilingual {
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 0.5px solid var(--separator);
+}
+
+.flashcard__english--back {
+  font-size: clamp(22px, 6vw, 28px);
+  margin-bottom: 8px;
+  color: var(--label);
+}
+
 .flashcard__chinese {
-  font-size: 26px;
+  font-size: clamp(24px, 6.5vw, 30px);
   font-weight: 700;
   letter-spacing: 0.35px;
-  margin-bottom: 12px;
   color: var(--tint);
+  text-align: center;
 }
 
 .flashcard__explanation {
@@ -627,7 +647,16 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 16px;
+}
+
+.flashcard-quiz-prompt {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--label);
+  margin-bottom: 2px;
 }
 
 .flashcard-tip {
@@ -638,12 +667,88 @@ button {
 }
 
 .review-start__desc,
-.plan-view__intro {
+.plan-view__intro,
+.learn-list__intro {
   font-size: 15px;
   color: var(--label-secondary);
   line-height: 1.5;
   margin-bottom: 20px;
   padding: 0 4px;
+}
+
+/* Learn list */
+.learn-list__group {
+  max-height: none;
+}
+
+.learn-item {
+  padding: 16px;
+}
+
+.learn-item--border {
+  border-bottom: 0.5px solid var(--separator);
+}
+
+.learn-item__header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.learn-item__bilingual {
+  margin-bottom: 8px;
+}
+
+.learn-item__english {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.learn-item__chinese {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--tint);
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+}
+
+.learn-item__explanation {
+  font-size: 15px;
+  color: var(--label-secondary);
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.learn-item__standard {
+  font-size: 13px;
+  color: var(--label-tertiary);
+  line-height: 1.4;
+}
+
+.learn-item__standard span {
+  font-weight: 600;
+  color: var(--label-secondary);
+}
+
+.learn-list__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--plain {
+  background: transparent;
+  color: var(--tint);
+  min-height: 44px;
 }
 
 .empty-state {

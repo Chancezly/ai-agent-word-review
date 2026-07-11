@@ -38,9 +38,13 @@ export function Flashcard({ term, onRate, index, total }: FlashcardProps) {
           <div className="flashcard__face flashcard__front">
             <p className="flashcard__hint">轻点翻转</p>
             <h2 className="flashcard__english">{term.english}</h2>
+            <p className="flashcard__front-tip">回忆中文含义</p>
           </div>
           <div className="flashcard__face flashcard__back">
-            <h3 className="flashcard__chinese">{term.chinese}</h3>
+            <div className="flashcard__bilingual">
+              <h2 className="flashcard__english flashcard__english--back">{term.english}</h2>
+              <p className="flashcard__chinese">{term.chinese}</p>
+            </div>
             <p className="flashcard__explanation">{term.explanation}</p>
             <div className="flashcard__standard">
               <strong>掌握标准</strong>
@@ -52,6 +56,7 @@ export function Flashcard({ term, onRate, index, total }: FlashcardProps) {
 
       {flipped ? (
         <div className="flashcard-actions">
+          <p className="flashcard-quiz-prompt">你掌握这个词了吗？</p>
           <button type="button" className="btn btn--tinted btn--red" onClick={() => handleRate('unknown')}>
             不认识
           </button>
@@ -63,7 +68,7 @@ export function Flashcard({ term, onRate, index, total }: FlashcardProps) {
           </button>
         </div>
       ) : (
-        <p className="flashcard-tip">先看英文术语，回忆含义后再翻转对照</p>
+        <p className="flashcard-tip">先看英文，回忆中文后再翻转对照</p>
       )}
     </div>
   )

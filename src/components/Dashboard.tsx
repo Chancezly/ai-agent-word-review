@@ -31,7 +31,7 @@ export function Dashboard({
           <p className="hero-card__eyebrow">{currentWeekLabel}</p>
           <h2 className="hero-card__title">学习进行中</h2>
           <p className="hero-card__meta">
-            起点 {startDate} · 新词 {todayNewCount} · 复习 {todayReviewCount}
+            起点 {startDate} · 待学 {todayNewCount} · 待复习 {todayReviewCount}
           </p>
         </div>
         <div className="hero-card__ring" aria-label={`已掌握 ${stats.percent}%`}>
